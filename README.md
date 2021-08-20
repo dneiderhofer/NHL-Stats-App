@@ -5,4 +5,4 @@ Stats are tracked in real-time for the 2019-2020 season and they are pulled from
 This project was created using Android Studio software and programmed with the Java language and XML markup language.
 This is my Senior Project for my BS in Computer Science at Ramapo College of New Jersey.
 
-- Daniel Neiderhofer
+~ Daniel Neiderhofer
