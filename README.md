@@ -1,4 +1,4 @@
-# NHL-Stats-App
+# NHL Stats App
 
 This program is used to track statistics from the National Hockey League.
 Stats are tracked in real-time for the 2019-2020 season and they are pulled from a website that is used as a database.
