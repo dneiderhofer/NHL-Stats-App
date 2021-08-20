@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML file responsible for displaying the contents of a Scrollable Activity -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LeagueStandings"
+    tools:showIn="@layout/activity_league_standings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintVertical_bias=".5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Overall League"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="**  z - Clinched Conference"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="435dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="y - Clinched Division"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="600dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="x - Clinched Playoff Spot  **"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="102dp" />
+
+        <TextView
+            android:text="Rank"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallRanksList"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="Team Name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="65dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallTeamsList"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="65dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="GP"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="290dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallGamesList"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="290dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="W"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="330dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallWinsList"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="330dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="L"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="370dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallLossesList"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="370dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="OT"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="410dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallOvertimeList"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="410dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="PTS"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="450dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallPointsList"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="450dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="GF"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="500dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallGoalsList"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="500dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="GA"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="550dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallGoalsAllowedList"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="550dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="L10"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="600dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallL10List"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="600dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+        <TextView
+            android:text="Strk"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="670dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/overallStreakList"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="670dp"
+            android:gravity="left"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML file responsible for displaying the contents of a Scrollable Activity -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Kings"
+    tools:showIn="@layout/activity_Kings">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintVertical_bias=".5">
+
+        <TextView
+            android:id="@+id/rosterColor"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Team Roster"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="102dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:text="Player"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/playersList"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="Age"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="220dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/agesList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="Pos"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="260dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/positionsList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="GP"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="300dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/gpList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="Pts"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="340dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/pointsList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="G"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="380dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/goalsList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="380dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="A"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="420dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/assistsList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="420dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="EV"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="460dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/evGoalsList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="460dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="PP"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="500dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/ppGoalsList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="500dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="SH"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="540dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/shGoalsList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="540dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="S"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="580dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/shotsList"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="580dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="S%"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="630dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/shotPercentList"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="630dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="TOI"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="685dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/toiList"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="685dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="ATOI"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="740dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/averageToiList"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="740dp"
+            android:layout_marginTop="120dp"
+            android:gravity="left"
+            android:text=""
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
